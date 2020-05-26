@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Special Items</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+body {
+  margin: 0;
+  color:purple;
+  font-weight:bold;
+   text-align:center;
+   background-image:url("data:image/jpeg;base64,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");
+
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+padding:-1px;
+   width: 100%;
+   background-color:gray;
+   text-align: center;
+}
+.header {
+  background-color: pink;
+  padding: 20px;
+  text-align: center;
+}
+a{
+color:red;
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Chinese Food Point</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://sonika09.github.io/coursera-test/signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="https://sonika09.github.io/coursera-test/login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container">
+
+</div>
+
+
+<div class="header">
+  <h1>Special Items</h1>
+</div>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/w3images/lights.jpg" target="_blank">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR0yKQQFpf6MMQNWqrfQRWkhpsqjKbXZ6wpMLjtO5lfXU__eWiW&usqp=CAU" style="width:300px;height:300px;">
+          <div class="caption">
+            <p> Combo Pack.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/w3images/nature.jpg" target="_blank">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcThO8UwCdPTwHTJNZ1xZWACTKHxTA0XPtNAheudxyD4MiF2oUZ9&usqp=CAU"  style="width:300px;height:300px;">
+          <div class="caption">
+            <p>Spicy Pizza.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/w3images/fjords.jpg" target="_blank">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSShQsF_-CmQ7x-at_vjn3gbL5INxQ_x7MserQu11ebA4bVvgZv&usqp=CAU" style="width:300px;height:300px;">
+          <div class="caption">
+            <p> Momos.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/w3images/fjords.jpg" target="_blank">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS6yuZRk1ToomoUrF9z_V_mom28wOf7qLBZTm19B8rS2FpuR8m1&usqp=CAU" style="width:300px;height:300px;">
+          <div class="caption">
+            <p> Chowmein.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+     <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/w3images/fjords.jpg" target="_blank">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQmbiNa4PhD26oLSPqM-cPwIZBa3UE315AKx1ZsqVYB_ADjhI4v&usqp=CAU"  style="width:300px;height:300px;">
+          <div class="caption">
+            <p>Spicy Golgappe.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+<div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/w3images/fjords.jpg" target="_blank">
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQTHr-C-BemuuAV5NAGakxugLjCaYsmgwlzIiRuMhPBaK5ZkrW6&usqp=CAU"  style="width:300px;height:300px;">
+          <div class="caption">
+            <p>Spicy Chilli Potatoes.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+<div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/w3images/fjords.jpg" target="_blank">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTiwqdpScIzm3LVqToBWjKjWD3qVa3wYRxE18jF8TetnaJoL3fC&usqp=CAU"  style="width:300px;height:300px;">
+          <div class="caption">
+            <p>Veg Biryani.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+<div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/w3images/fjords.jpg" target="_blank">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRzwPa6KuZG4VLkkWoOPpqFjI23lyIStjxoYPvsCCbGe8jXFdl5&usqp=CAU" style="width:300px;height:300px;">
+          <div class="caption">
+            <p>Gulab jamun.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+<div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/w3images/fjords.jpg" target="_blank">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTa-a_d-PdhSqjGqH1cibZLE3X-2l8NdgGD-isAV-kG20hlT7Bn&usqp=CAU"  style="width:300px;height:300px;">
+          <div class="caption">
+            <p>Sweets.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="footer">
+  <a href="">@Chinese Food Point<br>
+    9811*******   Greater Noida<br>
+     Gautam Budh Nagar 
+  
+  </a>
+</div>
+</body>
+</html>
